@@ -9,35 +9,9 @@
   body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f5f5; padding: 20px; color: #333; }
   h1 { text-align: center; margin-bottom: 5px; font-size: 24px; }
   .subtitle { text-align: center; color: #666; margin-bottom: 30px; font-size: 14px; }
-  .tray-section { margin-bottom: 40px; page-break-inside: avoid; }
+  .tray-section { margin-bottom: 50px; page-break-inside: avoid; }
   .tray-section h2 { margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #333; padding-bottom: 5px; display: inline-block; }
   .drawing-container { display: flex; justify-content: center; align-items: center; padding: 30px; }
-  
-  /* Scale: 1cm = 8px for screen display */
-  .tray-outer {
-    position: relative;
-    width: 528px; /* 66cm × 8 */
-    height: 288px; /* 36cm × 8 */
-    border: 3px solid #222;
-    background: #fff;
-    display: flex;
-  }
-  .tray-half {
-    flex: 1;
-    position: relative;
-    border: 1px dashed #999;
-  }
-  .tray-half:first-child {
-    border-right: 2px solid #222;
-  }
-  
-  /* Dimension lines */
-  .dim-h-top, .dim-h-bottom { position: absolute; left: 0; right: 0; display: flex; align-items: center; justify-content: center; }
-  .dim-h-top { top: -35px; }
-  .dim-h-bottom { bottom: -35px; }
-  .dim-v-left, .dim-v-right { position: absolute; top: 0; bottom: 0; display: flex; align-items: center; justify-content: center; writing-mode: vertical-rl; text-orientation: mixed; }
-  .dim-v-left { left: -45px; }
-  .dim-v-right { right: -45px; }
   
   .dim-line {
     position: relative;
@@ -47,59 +21,17 @@
     background: #f5f5f5;
     padding: 2px 8px;
     white-space: nowrap;
+    z-index: 2;
   }
   
-  /* Arrow lines using pseudo-elements */
-  .dim-h-top::before, .dim-h-bottom::before {
-    content: '';
-    position: absolute;
-    left: 0; right: 0;
-    top: 50%;
-    height: 1px;
-    background: #c00;
-  }
-  .dim-h-top::after, .dim-h-bottom::after {
-    content: '';
-    position: absolute;
-    left: 0; right: 0;
-    top: calc(50% - 4px);
-    height: 9px;
-    border-left: 2px solid #c00;
-    border-right: 2px solid #c00;
-  }
-  .dim-v-left::before, .dim-v-right::before {
-    content: '';
-    position: absolute;
-    top: 0; bottom: 0;
-    left: 50%;
-    width: 1px;
-    background: #c00;
-  }
-  .dim-v-left::after, .dim-v-right::after {
-    content: '';
-    position: absolute;
-    top: 0; bottom: 0;
-    left: calc(50% - 4px);
-    width: 9px;
-    border-top: 2px solid #c00;
-    border-bottom: 2px solid #c00;
-  }
+  /* Dimension helpers */
+  .dim-h, .dim-v { position: absolute; display: flex; align-items: center; justify-content: center; }
+  .dim-h::before { content: ''; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: #c00; }
+  .dim-h::after { content: ''; position: absolute; left: 0; right: 0; top: calc(50% - 4px); height: 9px; border-left: 2px solid #c00; border-right: 2px solid #c00; }
+  .dim-v { writing-mode: vertical-rl; text-orientation: mixed; }
+  .dim-v::before { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; background: #c00; }
+  .dim-v::after { content: ''; position: absolute; top: 0; bottom: 0; left: calc(50% - 4px); width: 9px; border-top: 2px solid #c00; border-bottom: 2px solid #c00; }
 
-  /* Inner half dimensions */
-  .half-dim {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 12px;
-    color: #0066cc;
-    font-weight: 600;
-    background: rgba(255,255,255,0.9);
-    padding: 2px 6px;
-    border-radius: 3px;
-    white-space: nowrap;
-  }
-  
   .tray-label {
     position: absolute;
     top: 50%;
@@ -125,10 +57,14 @@
     vertical-align: middle;
   }
 
+  .section-divider { border: none; border-top: 2px dashed #ccc; margin: 40px 0; }
+
   @media print {
     body { background: #fff; padding: 10px; }
-    .drawing-container { padding: 20px; }
+    .drawing-container { padding: 15px; }
     .notes { border-color: #333; }
+    .dim-line { background: #fff; }
+    .section-divider { page-break-after: always; border: none; }
   }
 </style>
 </head>
@@ -137,32 +73,123 @@
 <h1>Adnan Jewelry — Shelving Dimensions</h1>
 <p class="subtitle">Technical drawings for fabrication — all measurements in centimeters</p>
 
+<!-- ========== TRAY TYPE A ========== -->
 <div class="tray-section">
   <h2>Tray Type A — Rectangular (Split) <span class="copies-badge">× 4</span></h2>
   
-  <div class="drawing-container">
-    <div style="position: relative; padding: 50px;">
-      <div class="tray-outer">
-        <!-- Top dimension: full width -->
-        <div class="dim-h-top"><span class="dim-line">66 cm</span></div>
-        <!-- Bottom: each half -->
-        <div class="dim-h-bottom" style="width:50%; left:0;"><span class="dim-line">33 cm</span></div>
-        <div class="dim-h-bottom" style="width:50%; right:0; left:auto;"><span class="dim-line">33 cm</span></div>
-        <!-- Left: full height -->
-        <div class="dim-v-left"><span class="dim-line">36 cm</span></div>
-        
-        <div class="tray-half">
-          <span class="tray-label">Left Half<br>33 × 36 cm</span>
+  <!-- Show all 4 trays side by side -->
+  <div class="drawing-container" style="flex-wrap: wrap; gap: 40px;">
+    <!-- Tray 1 -->
+    <div style="position: relative; padding: 45px 50px;">
+      <div style="position: relative; width: 264px; height: 144px; border: 3px solid #222; background: #fff; display: flex;">
+        <!-- Scale: 1cm = 4px to fit 4 across -->
+        <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">66 cm</span></div>
+        <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">36 cm</span></div>
+        <div style="flex:1; position:relative; border-right: 2px solid #222;">
+          <span class="tray-label">33 × 36</span>
         </div>
-        <div class="tray-half">
-          <span class="tray-label">Right Half<br>33 × 36 cm</span>
+        <div style="flex:1; position:relative;">
+          <span class="tray-label">33 × 36</span>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Tray A-1</div>
+    </div>
+    <!-- Tray 2 -->
+    <div style="position: relative; padding: 45px 50px;">
+      <div style="position: relative; width: 264px; height: 144px; border: 3px solid #222; background: #fff; display: flex;">
+        <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">66 cm</span></div>
+        <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">36 cm</span></div>
+        <div style="flex:1; position:relative; border-right: 2px solid #222;">
+          <span class="tray-label">33 × 36</span>
+        </div>
+        <div style="flex:1; position:relative;">
+          <span class="tray-label">33 × 36</span>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Tray A-2</div>
+    </div>
+    <!-- Tray 3 -->
+    <div style="position: relative; padding: 45px 50px;">
+      <div style="position: relative; width: 264px; height: 144px; border: 3px solid #222; background: #fff; display: flex;">
+        <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">66 cm</span></div>
+        <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">36 cm</span></div>
+        <div style="flex:1; position:relative; border-right: 2px solid #222;">
+          <span class="tray-label">33 × 36</span>
+        </div>
+        <div style="flex:1; position:relative;">
+          <span class="tray-label">33 × 36</span>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Tray A-3</div>
+    </div>
+    <!-- Tray 4 -->
+    <div style="position: relative; padding: 45px 50px;">
+      <div style="position: relative; width: 264px; height: 144px; border: 3px solid #222; background: #fff; display: flex;">
+        <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">66 cm</span></div>
+        <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">36 cm</span></div>
+        <div style="flex:1; position:relative; border-right: 2px solid #222;">
+          <span class="tray-label">33 × 36</span>
+        </div>
+        <div style="flex:1; position:relative;">
+          <span class="tray-label">33 × 36</span>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Tray A-4</div>
+    </div>
+  </div>
+  
+  <div class="notes">
+    <strong>Notes:</strong> 4 identical trays. Each is 66 × 36 cm, divided into two equal compartments of 33 × 36 cm.
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ========== TRAY TYPE B ========== -->
+<div class="tray-section">
+  <h2>Tray Type B — Vertical (3-Section) <span class="copies-badge">× 1</span></h2>
+  
+  <div class="drawing-container">
+    <!-- Scale: 1cm = 6px -->
+    <div style="position: relative; padding: 45px 55px;">
+      <div style="position: relative; width: 150px; height: 624px; border: 3px solid #222; background: #fff; display: flex; flex-direction: column;">
+        
+        <!-- Top dimension: width -->
+        <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">25 cm</span></div>
+        <!-- Left: full height -->
+        <div class="dim-v" style="left: -45px; top: 0; bottom: 0;"><span class="dim-line">104 cm</span></div>
+        
+        <!-- Right side: section heights -->
+        <div class="dim-v" style="right: -50px; top: 0; height: 180px;"><span class="dim-line">30 cm</span></div>
+        <div class="dim-v" style="right: -50px; top: 180px; height: 222px;"><span class="dim-line">37 cm</span></div>
+        <div class="dim-v" style="right: -50px; top: 402px; height: 222px;"><span class="dim-line">37 cm</span></div>
+        
+        <!-- Section 1: Weight Scale (30cm) -->
+        <div style="position: relative; height: 180px; border-bottom: 2px solid #222; background: #f0f7ff;">
+          <span class="tray-label" style="font-size: 12px; color: #0066cc; font-weight: 600;">
+            ⚖️ Weight Scale<br>Section<br><span style="font-weight:400; color:#666;">25 × 30 cm</span>
+          </span>
+        </div>
+        
+        <!-- Section 2: Middle (37cm) -->
+        <div style="position: relative; flex: 1; border-bottom: 2px solid #222;">
+          <span class="tray-label">
+            Section 2<br>25 × 37 cm
+          </span>
+        </div>
+        
+        <!-- Section 3: Bottom (37cm) -->
+        <div style="position: relative; flex: 1;">
+          <span class="tray-label">
+            Section 3<br>25 × 37 cm
+          </span>
         </div>
       </div>
     </div>
   </div>
   
   <div class="notes">
-    <strong>Notes:</strong> Full tray is 66 × 36 cm, divided into two equal compartments of 33 × 36 cm each. Quantity: 4 trays.
+    <strong>Notes:</strong> Vertical tray, 25 × 104 cm total. Top section (30 cm) for weight scale. Remaining 74 cm split equally into two sections of 37 cm each. All sections are 25 cm wide. Quantity: 1 tray.
   </div>
 </div>
 
