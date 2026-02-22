@@ -636,21 +636,107 @@
 
   <div class="drawing-container">
     <div style="position: relative; padding: 45px 55px;">
-      <div style="position: relative; width: 576px; height: 876px; border: 3px solid #222; background: #fff;">
+      <div style="position: relative; width: 576px; height: 876px; border: 3px solid #222; background: #fff; overflow: hidden;">
         <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">96 cm</span></div>
         <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">146 cm</span></div>
-        <!-- Top row: 2 Small diamonds -->
-        <svg style="position:absolute;left:114px;top:108px;z-index:2;" width="174" height="210" viewBox="0 0 174 210"><polygon points="87,0 174,105 87,210 0,105" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/><text x="87" y="113" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">S</text></svg>
-        <svg style="position:absolute;left:288px;top:108px;z-index:2;" width="174" height="210" viewBox="0 0 174 210"><polygon points="87,0 174,105 87,210 0,105" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/><text x="87" y="113" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">S</text></svg>
-        <!-- Middle row: 3 Big diamonds -->
-        <svg style="position:absolute;left:27px;top:318px;z-index:2;" width="174" height="240" viewBox="0 0 174 240"><polygon points="87,0 174,120 87,240 0,120" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/><text x="87" y="128" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">B</text></svg>
-        <svg style="position:absolute;left:201px;top:318px;z-index:2;" width="174" height="240" viewBox="0 0 174 240"><polygon points="87,0 174,120 87,240 0,120" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/><text x="87" y="128" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">B</text></svg>
-        <svg style="position:absolute;left:375px;top:318px;z-index:2;" width="174" height="240" viewBox="0 0 174 240"><polygon points="87,0 174,120 87,240 0,120" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/><text x="87" y="128" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">B</text></svg>
-        <!-- Bottom row: 2 Small diamonds -->
-        <svg style="position:absolute;left:114px;top:558px;z-index:2;" width="174" height="210" viewBox="0 0 174 210"><polygon points="87,0 174,105 87,210 0,105" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/><text x="87" y="113" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">S</text></svg>
-        <svg style="position:absolute;left:288px;top:558px;z-index:2;" width="174" height="210" viewBox="0 0 174 210"><polygon points="87,0 174,105 87,210 0,105" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/><text x="87" y="113" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">S</text></svg>
+        
+        <!-- Connected honeycomb diamond layout using single SVG -->
+        <svg width="576" height="876" viewBox="0 0 576 876" style="position:absolute;top:0;left:0;">
+          <!-- Row 1: 2 Small diamonds (S = 174w × 210h) centered with row 2 -->
+          <!-- Row 2: 3 Big diamonds (B = 174w × 240h) -->
+          <!-- Row 3: 2 Small diamonds -->
+          
+          <!-- Positions calculated for touching points:
+               Row 2 (Big): x=27, 201, 375  y=318  (174w × 240h)
+               Row 1 (Small): points touch Big top points
+               Top of Big at y=318, Small bottom point at y=318
+               Small diamond 210h, so top = 318-210 = 108
+               Small x centered between Big: 
+                 Between Big1(27) and Big2(201): center = 114+87 = 201, small center at x=114+87=201 → x=201-87=114
+                 Between Big2(201) and Big3(375): center = 288+87=375, small center at x=288+87=375 → x=375-87=288
+               Row 3 (Small): top point touches Big bottom point
+               Big bottom at y=318+240=558, Small top at y=558, Small goes to y=558+210=768
+          -->
+          
+          <!-- Diamond outlines - all connected -->
+          <!-- Top Small 1 (left) -->
+          <polygon points="201,108 288,213 201,318 114,213" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/>
+          <!-- Top Small 2 (right) -->
+          <polygon points="375,108 462,213 375,318 288,213" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/>
+          
+          <!-- Middle Big 1 (left) -->
+          <polygon points="114,318 201,438 114,558 27,438" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/>
+          <!-- Middle Big 2 (center) -->
+          <polygon points="288,318 375,438 288,558 201,438" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/>
+          <!-- Middle Big 3 (right) -->
+          <polygon points="462,318 549,438 462,558 375,438" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/>
+          
+          <!-- Bottom Small 1 (left) -->
+          <polygon points="201,558 288,663 201,768 114,663" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/>
+          <!-- Bottom Small 2 (right) -->
+          <polygon points="375,558 462,663 375,768 288,663" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/>
+          
+          <!-- Neck busts on each diamond -->
+          <!-- Neck bust: a simple curved bust shape near the top-center of each diamond -->
+          
+          <!-- Top Small 1 neck -->
+          <ellipse cx="201" cy="175" rx="22" ry="8" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <path d="M179,175 Q179,195 170,210 L232,210 Q223,195 223,175" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <line x1="195" y1="167" x2="195" y2="175" stroke="#5a7a9a" stroke-width="1"/>
+          <line x1="207" y1="167" x2="207" y2="175" stroke="#5a7a9a" stroke-width="1"/>
+          <circle cx="201" cy="162" r="10" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <text x="201" y="245" text-anchor="middle" font-size="13" fill="#5a7a9a" font-family="sans-serif">S</text>
+          
+          <!-- Top Small 2 neck -->
+          <ellipse cx="375" cy="175" rx="22" ry="8" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <path d="M353,175 Q353,195 344,210 L406,210 Q397,195 397,175" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <line x1="369" y1="167" x2="369" y2="175" stroke="#5a7a9a" stroke-width="1"/>
+          <line x1="381" y1="167" x2="381" y2="175" stroke="#5a7a9a" stroke-width="1"/>
+          <circle cx="375" cy="162" r="10" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <text x="375" y="245" text-anchor="middle" font-size="13" fill="#5a7a9a" font-family="sans-serif">S</text>
+          
+          <!-- Middle Big 1 neck -->
+          <ellipse cx="114" cy="390" rx="25" ry="9" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <path d="M89,390 Q89,412 78,430 L150,430 Q139,412 139,390" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <line x1="107" y1="381" x2="107" y2="390" stroke="#5a7a9a" stroke-width="1"/>
+          <line x1="121" y1="381" x2="121" y2="390" stroke="#5a7a9a" stroke-width="1"/>
+          <circle cx="114" cy="375" r="12" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <text x="114" y="470" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">B</text>
+          
+          <!-- Middle Big 2 neck -->
+          <ellipse cx="288" cy="390" rx="25" ry="9" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <path d="M263,390 Q263,412 252,430 L324,430 Q313,412 313,390" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <line x1="281" y1="381" x2="281" y2="390" stroke="#5a7a9a" stroke-width="1"/>
+          <line x1="295" y1="381" x2="295" y2="390" stroke="#5a7a9a" stroke-width="1"/>
+          <circle cx="288" cy="375" r="12" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <text x="288" y="470" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">B</text>
+          
+          <!-- Middle Big 3 neck -->
+          <ellipse cx="462" cy="390" rx="25" ry="9" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <path d="M437,390 Q437,412 426,430 L498,430 Q487,412 487,390" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <line x1="455" y1="381" x2="455" y2="390" stroke="#5a7a9a" stroke-width="1"/>
+          <line x1="469" y1="381" x2="469" y2="390" stroke="#5a7a9a" stroke-width="1"/>
+          <circle cx="462" cy="375" r="12" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <text x="462" y="470" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">B</text>
+          
+          <!-- Bottom Small 1 neck -->
+          <ellipse cx="201" cy="625" rx="22" ry="8" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <path d="M179,625 Q179,645 170,660 L232,660 Q223,645 223,625" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <line x1="195" y1="617" x2="195" y2="625" stroke="#5a7a9a" stroke-width="1"/>
+          <line x1="207" y1="617" x2="207" y2="625" stroke="#5a7a9a" stroke-width="1"/>
+          <circle cx="201" cy="612" r="10" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <text x="201" y="695" text-anchor="middle" font-size="13" fill="#5a7a9a" font-family="sans-serif">S</text>
+          
+          <!-- Bottom Small 2 neck -->
+          <ellipse cx="375" cy="625" rx="22" ry="8" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <path d="M353,625 Q353,645 344,660 L406,660 Q397,645 397,625" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <line x1="369" y1="617" x2="369" y2="625" stroke="#5a7a9a" stroke-width="1"/>
+          <line x1="381" y1="617" x2="381" y2="625" stroke="#5a7a9a" stroke-width="1"/>
+          <circle cx="375" cy="612" r="10" fill="none" stroke="#5a7a9a" stroke-width="1"/>
+          <text x="375" y="695" text-anchor="middle" font-size="13" fill="#5a7a9a" font-family="sans-serif">S</text>
+        </svg>
       </div>
-      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666; font-weight:600;">3 Big + 4 Small = 7 diamonds</div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666; font-weight:600;">3 Big + 4 Small = 7 diamonds — all connected, each with necklace bust</div>
     </div>
   </div>
 
