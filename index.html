@@ -12,7 +12,7 @@
   .tray-section { margin-bottom: 50px; page-break-inside: avoid; }
   .tray-section h2 { margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid #333; padding-bottom: 5px; display: inline-block; }
   .drawing-container { display: flex; justify-content: center; align-items: center; padding: 30px; }
-  
+
   .dim-line {
     position: relative;
     font-size: 13px;
@@ -23,7 +23,7 @@
     white-space: nowrap;
     z-index: 2;
   }
-  
+
   /* Dimension helpers */
   .dim-h, .dim-v { position: absolute; display: flex; align-items: center; justify-content: center; }
   .dim-h::before { content: ''; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: #c00; }
@@ -42,10 +42,10 @@
     text-align: center;
     line-height: 1.4;
   }
-  
+
   .notes { margin-top: 15px; padding: 10px 15px; background: #fff; border-left: 3px solid #0066cc; font-size: 13px; }
   .notes strong { color: #0066cc; }
-  
+
   .copies-badge {
     display: inline-block;
     background: #222;
@@ -77,148 +77,585 @@
 <!-- ========== TRAY TYPE A ========== -->
 <div class="tray-section">
   <h2>Tray Type A — Rectangular (Split) <span class="copies-badge">× 4</span></h2>
-  
+
   <!-- Show all 4 trays side by side -->
   <div class="drawing-container" style="flex-wrap: wrap; gap: 40px;">
-    <!-- Tray 1 -->
+    <!-- Shelf 1 -->
     <div style="position: relative; padding: 45px 50px;">
       <div style="position: relative; width: 264px; height: 144px; border: 3px solid #222; background: #fff; display: flex;">
         <!-- Scale: 1cm = 4px to fit 4 across -->
         <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">66 cm</span></div>
         <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">36 cm</span></div>
         <div style="flex:1; position:relative; border-right: 2px solid #222;">
-          <span class="tray-label">33 × 36</span>
+          <span class="tray-label">Tray 1<br>33 × 36</span>
         </div>
         <div style="flex:1; position:relative;">
-          <span class="tray-label">33 × 36</span>
+          <span class="tray-label">Tray 2<br>33 × 36</span>
         </div>
       </div>
-      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Tray A-1</div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Shelf 1</div>
     </div>
-    <!-- Tray 2 -->
+    <!-- Shelf 2 -->
     <div style="position: relative; padding: 45px 50px;">
       <div style="position: relative; width: 264px; height: 144px; border: 3px solid #222; background: #fff; display: flex;">
         <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">66 cm</span></div>
         <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">36 cm</span></div>
         <div style="flex:1; position:relative; border-right: 2px solid #222;">
-          <span class="tray-label">33 × 36</span>
+          <span class="tray-label">Tray 3<br>33 × 36</span>
         </div>
         <div style="flex:1; position:relative;">
-          <span class="tray-label">33 × 36</span>
+          <span class="tray-label">Tray 4<br>33 × 36</span>
         </div>
       </div>
-      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Tray A-2</div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Shelf 2</div>
     </div>
-    <!-- Tray 3 -->
+    <!-- Shelf 3 -->
     <div style="position: relative; padding: 45px 50px;">
       <div style="position: relative; width: 264px; height: 144px; border: 3px solid #222; background: #fff; display: flex;">
         <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">66 cm</span></div>
         <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">36 cm</span></div>
         <div style="flex:1; position:relative; border-right: 2px solid #222;">
-          <span class="tray-label">33 × 36</span>
+          <span class="tray-label">Tray 5<br>33 × 36</span>
         </div>
         <div style="flex:1; position:relative;">
-          <span class="tray-label">33 × 36</span>
+          <span class="tray-label">Tray 6<br>33 × 36</span>
         </div>
       </div>
-      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Tray A-3</div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Shelf 3</div>
     </div>
-    <!-- Tray 4 -->
+    <!-- Shelf 4 -->
     <div style="position: relative; padding: 45px 50px;">
       <div style="position: relative; width: 264px; height: 144px; border: 3px solid #222; background: #fff; display: flex;">
         <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">66 cm</span></div>
         <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">36 cm</span></div>
         <div style="flex:1; position:relative; border-right: 2px solid #222;">
-          <span class="tray-label">33 × 36</span>
+          <span class="tray-label">Tray 7<br>33 × 36</span>
         </div>
         <div style="flex:1; position:relative;">
-          <span class="tray-label">33 × 36</span>
+          <span class="tray-label">Tray 8<br>33 × 36</span>
         </div>
       </div>
-      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Tray A-4</div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Shelf 4</div>
     </div>
   </div>
-  
+
   <div class="notes">
-    <strong>Notes:</strong> 4 identical trays. Each is 66 × 36 cm, divided into two equal compartments of 33 × 36 cm.
+    <strong>Notes:</strong> 4 identical shelves. Each is 66 × 36 cm, divided into two equal compartments of 33 × 36 cm.
   </div>
 </div>
 
 <hr class="section-divider">
 
-<!-- ========== TRAY TYPE B ========== -->
+<!-- ========== TRAY TYPE B & C ========== -->
 <div class="tray-section">
-  <h2>Tray Type B — Vertical (3-Section) <span class="copies-badge">× 1</span></h2>
-  
-  <div class="drawing-container">
-    <!-- Scale: 1cm = 6px -->
-    <div style="position: relative; padding: 45px 55px;">
-      <div style="position: relative; width: 150px; height: 624px; border: 3px solid #222; background: #fff; display: flex; flex-direction: column;">
-        
-        <!-- Top dimension: width -->
-        <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">25 cm</span></div>
-        <!-- Left: full height -->
-        <div class="dim-v" style="left: -45px; top: 0; bottom: 0;"><span class="dim-line">104 cm</span></div>
-        
-        <!-- Right side: section heights -->
-        <div class="dim-v" style="right: -50px; top: 0; height: 180px;"><span class="dim-line">30 cm</span></div>
-        <div class="dim-v" style="right: -50px; top: 180px; height: 222px;"><span class="dim-line">37 cm</span></div>
-        <div class="dim-v" style="right: -50px; top: 402px; height: 222px;"><span class="dim-line">37 cm</span></div>
-        
+  <h2>Tray Type B — Vertical (3-Section) <span class="copies-badge">× 1</span> &nbsp;&nbsp; | &nbsp;&nbsp; Tray Type C — Moving Counter <span class="copies-badge">× 1</span></h2>
+
+  <div class="drawing-container" style="align-items: flex-start; gap: 60px;">
+    <!-- Type B (horizontal) -->
+    <div style="position: relative; padding: 45px 20px 55px;">
+      <div style="position: relative; width: 624px; height: 150px; border: 3px solid #222; background: #fff; display: flex; flex-direction: row;">
+
+        <!-- Top dimension: total length -->
+        <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">104 cm</span></div>
+        <!-- Left: height -->
+        <div class="dim-v" style="left: -45px; top: 0; bottom: 0;"><span class="dim-line">25 cm</span></div>
+
+        <!-- Bottom: section widths -->
+        <div class="dim-h" style="bottom: -35px; left: 0; width: 180px;"><span class="dim-line">30 cm</span></div>
+        <div class="dim-h" style="bottom: -35px; left: 180px; width: 222px;"><span class="dim-line">37 cm</span></div>
+        <div class="dim-h" style="bottom: -35px; left: 402px; width: 222px;"><span class="dim-line">37 cm</span></div>
+
         <!-- Section 1: Weight Scale (30cm) -->
-        <div style="position: relative; height: 180px; border-bottom: 2px solid #222; background: #f0f7ff;">
+        <div style="position: relative; width: 180px; border-right: 2px solid #222; background: #f0f7ff;">
           <span class="tray-label" style="font-size: 12px; color: #0066cc; font-weight: 600;">
-            ⚖️ Weight Scale<br>Section<br><span style="font-weight:400; color:#666;">25 × 30 cm</span>
+            ⚖️ Weight Scale<br><span style="font-weight:400; color:#666;">30 × 25 cm</span>
           </span>
         </div>
-        
+
         <!-- Section 2: Middle (37cm) -->
-        <div style="position: relative; flex: 1; border-bottom: 2px solid #222;">
+        <div style="position: relative; flex: 1; border-right: 2px solid #222;">
           <span class="tray-label">
-            Section 2<br>25 × 37 cm
+            Tray 9<br>37 × 25 cm
           </span>
         </div>
-        
-        <!-- Section 3: Bottom (37cm) -->
+
+        <!-- Section 3: Right (37cm) -->
         <div style="position: relative; flex: 1;">
           <span class="tray-label">
-            Section 3<br>25 × 37 cm
+            Tray 10<br>37 × 25 cm
           </span>
         </div>
       </div>
     </div>
-  </div>
-  
-  <div class="notes">
-    <strong>Notes:</strong> Vertical tray, 25 × 104 cm total. Top section (30 cm) for weight scale. Remaining 74 cm split equally into two sections of 37 cm each. All sections are 25 cm wide. Quantity: 1 tray.
-  </div>
-</div>
 
-<hr class="section-divider">
-
-<!-- ========== TRAY TYPE C ========== -->
-<div class="tray-section">
-  <h2>Tray Type C — Moving Counter <span class="copies-badge">× 1</span></h2>
-  
-  <div class="drawing-container">
-    <!-- Scale: 1cm = 6px -->
+    <!-- Type C -->
     <div style="position: relative; padding: 45px 55px;">
       <div style="position: relative; width: 216px; height: 246px; border: 3px solid #222; background: #fff;">
-        
+
         <!-- Top: width -->
         <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">36 cm</span></div>
         <!-- Left: height -->
         <div class="dim-v" style="left: -45px; top: 0; bottom: 0;"><span class="dim-line">41 cm</span></div>
-        
+
         <span class="tray-label" style="font-size: 13px; font-weight: 600; color: #0066cc;">
-          📦 Moving Counter<br><span style="font-weight:400; color:#666;">36 × 41 cm</span>
+          📦 Tray 11<br>Moving Counter<br><span style="font-weight:400; color:#666;">36 × 41 cm</span>
         </span>
       </div>
     </div>
   </div>
-  
+
   <div class="notes">
-    <strong>Notes:</strong> Moving Counter shelf. 36 × 41 cm, single compartment. Quantity: 1.
+    <strong>Notes:</strong> Type B: Vertical tray, 25 × 104 cm total. Top section (30 cm) for weight scale, remaining 74 cm split into two sections of 37 cm each. Quantity: 1. &nbsp;|&nbsp; Type C: Moving Counter, 36 × 41 cm, single compartment. Quantity: 1.
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ========== BACK WALL DISPLAYS ========== -->
+<div class="tray-section">
+  <h2>Hanging Panel — Neck with Hooks <span class="copies-badge">× 5</span></h2>
+
+  <!-- Neck Size Illustration -->
+  <div class="drawing-container" style="gap: 80px; margin-bottom: 10px;">
+    <!-- Medium Neck -->
+    <div style="position: relative; text-align: center;">
+      <div style="font-weight: 700; font-size: 16px; margin-bottom: 12px; color: #333;">Medium Neck</div>
+      <div style="position: relative; display: inline-block; padding: 35px 45px;">
+        <svg width="255" height="315" viewBox="0 0 102 126">
+          <path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="0.8"/>
+          <line x1="51" y1="2" x2="51" y2="0" stroke="#baa89a" stroke-width="0.6"/>
+          <circle cx="51" cy="0" r="1.5" fill="none" stroke="#baa89a" stroke-width="0.6"/>
+        </svg>
+        <!-- Width dimension -->
+        <div class="dim-h" style="bottom: 0; left: 0; right: 0;"><span class="dim-line">17 cm</span></div>
+        <!-- Height dimension -->
+        <div class="dim-v" style="right: -35px; top: 0; bottom: 0;"><span class="dim-line">21 cm</span></div>
+      </div>
+    </div>
+
+    <!-- Small Neck -->
+    <div style="position: relative; text-align: center;">
+      <div style="font-weight: 700; font-size: 16px; margin-bottom: 12px; color: #333;">Small Neck</div>
+      <div style="position: relative; display: inline-block; padding: 35px 45px;">
+        <svg width="165" height="255" viewBox="0 0 66 102">
+          <path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="0.8"/>
+          <line x1="33" y1="1" x2="33" y2="0" stroke="#baa89a" stroke-width="0.6"/>
+          <circle cx="33" cy="0" r="1.2" fill="none" stroke="#baa89a" stroke-width="0.6"/>
+        </svg>
+        <!-- Width dimension -->
+        <div class="dim-h" style="bottom: 0; left: 0; right: 0;"><span class="dim-line">11 cm</span></div>
+        <!-- Height dimension -->
+        <div class="dim-v" style="right: -35px; top: 0; bottom: 0;"><span class="dim-line">17 cm</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="drawing-container" style="flex-wrap: wrap; gap: 40px;">
+    <!-- Panel 1 (full neck layout) -->
+    <div style="position: relative; padding: 45px 55px;">
+      <div style="position: relative; width: 258px; height: 876px; border: 3px solid #222; background: #fff;">
+        <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">43 cm</span></div>
+        <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">146 cm</span></div>
+        <!-- Hook lines every 10cm -->
+        <div style="position:absolute; left:0; right:0; top:60px;   border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:120px;  border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:180px;  border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:240px;  border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:300px;  border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:360px;  border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:420px;  border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:480px;  border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:540px;  border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:600px;  border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:660px;  border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:720px;  border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:780px;  border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:840px;  border-top:1px dashed #ccc;"></div>
+        <div class="dim-v" style="right: -50px; top: 0; height: 60px;"><span class="dim-line">10 cm</span></div>
+
+        <!-- Row 1: 2 Medium necks (0–126px / 0–21cm) -->
+        <svg style="position:absolute; left:18px; top:0; z-index:2;" width="102" height="126" viewBox="0 0 102 126">
+          <path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/>
+          <text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text>
+        </svg>
+        <svg style="position:absolute; left:138px; top:0; z-index:2;" width="102" height="126" viewBox="0 0 102 126">
+          <path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/>
+          <text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text>
+        </svg>
+
+        <!-- Row 2: 3 Small necks (156–258px / 26–43cm) -->
+        <svg style="position:absolute; left:15px; top:156px; z-index:2;" width="66" height="102" viewBox="0 0 66 102">
+          <path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/>
+          <text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text>
+        </svg>
+        <svg style="position:absolute; left:96px; top:156px; z-index:2;" width="66" height="102" viewBox="0 0 66 102">
+          <path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/>
+          <text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text>
+        </svg>
+        <svg style="position:absolute; left:177px; top:156px; z-index:2;" width="66" height="102" viewBox="0 0 66 102">
+          <path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/>
+          <text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text>
+        </svg>
+
+        <!-- Row 3: 2 Medium necks (288–414px / 48–69cm) -->
+        <svg style="position:absolute; left:18px; top:288px; z-index:2;" width="102" height="126" viewBox="0 0 102 126">
+          <path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/>
+          <text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text>
+        </svg>
+        <svg style="position:absolute; left:138px; top:288px; z-index:2;" width="102" height="126" viewBox="0 0 102 126">
+          <path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/>
+          <text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text>
+        </svg>
+
+        <!-- Row 4: 3 Small necks (444–546px / 74–91cm) -->
+        <svg style="position:absolute; left:15px; top:444px; z-index:2;" width="66" height="102" viewBox="0 0 66 102">
+          <path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/>
+          <text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text>
+        </svg>
+        <svg style="position:absolute; left:96px; top:444px; z-index:2;" width="66" height="102" viewBox="0 0 66 102">
+          <path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/>
+          <text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text>
+        </svg>
+        <svg style="position:absolute; left:177px; top:444px; z-index:2;" width="66" height="102" viewBox="0 0 66 102">
+          <path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/>
+          <text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text>
+        </svg>
+
+        <!-- Row 5: 2 Medium necks (576–702px / 96–117cm) -->
+        <svg style="position:absolute; left:18px; top:576px; z-index:2;" width="102" height="126" viewBox="0 0 102 126">
+          <path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/>
+          <text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text>
+        </svg>
+        <svg style="position:absolute; left:138px; top:576px; z-index:2;" width="102" height="126" viewBox="0 0 102 126">
+          <path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/>
+          <text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text>
+        </svg>
+
+        <!-- Row 6: 3 Small necks (732–834px / 122–139cm) -->
+        <svg style="position:absolute; left:15px; top:732px; z-index:2;" width="66" height="102" viewBox="0 0 66 102">
+          <path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/>
+          <text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text>
+        </svg>
+        <svg style="position:absolute; left:96px; top:732px; z-index:2;" width="66" height="102" viewBox="0 0 66 102">
+          <path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/>
+          <text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text>
+        </svg>
+        <svg style="position:absolute; left:177px; top:732px; z-index:2;" width="66" height="102" viewBox="0 0 66 102">
+          <path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/>
+          <text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text>
+        </svg>
+
+        <!-- Row labels on right -->
+        <div style="position:absolute; right:-85px; top:50px; font-size:9px; color:#666;">Row 1 (2×M)</div>
+        <div style="position:absolute; right:-85px; top:195px; font-size:9px; color:#666;">Row 2 (3×S)</div>
+        <div style="position:absolute; right:-85px; top:338px; font-size:9px; color:#666;">Row 3 (2×M)</div>
+        <div style="position:absolute; right:-85px; top:483px; font-size:9px; color:#666;">Row 4 (3×S)</div>
+        <div style="position:absolute; right:-85px; top:626px; font-size:9px; color:#666;">Row 5 (2×M)</div>
+        <div style="position:absolute; right:-85px; top:771px; font-size:9px; color:#666;">Row 6 (3×S)</div>
+      </div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Panel 1 (× 5 identical)</div>
+    </div>
+    <!-- Panel 2 -->
+    <div style="position: relative; padding: 45px 55px;">
+      <div style="position: relative; width: 258px; height: 876px; border: 3px solid #222; background: #fff;">
+        <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">43 cm</span></div>
+        <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">146 cm</span></div>
+        <div style="position:absolute; left:0; right:0; top:60px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:120px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:180px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:240px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:300px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:360px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:420px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:480px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:540px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:600px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:660px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:720px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:780px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:840px; border-top:1px dashed #ccc;"></div>
+        <svg style="position:absolute; left:18px; top:0; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:138px; top:0; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:15px; top:156px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:96px; top:156px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:177px; top:156px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:18px; top:288px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:138px; top:288px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:15px; top:444px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:96px; top:444px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:177px; top:444px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:18px; top:576px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:138px; top:576px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:15px; top:732px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:96px; top:732px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:177px; top:732px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+      </div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Panel 2</div>
+    </div>
+    <!-- Panel 3 -->
+    <div style="position: relative; padding: 45px 55px;">
+      <div style="position: relative; width: 258px; height: 876px; border: 3px solid #222; background: #fff;">
+        <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">43 cm</span></div>
+        <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">146 cm</span></div>
+        <div style="position:absolute; left:0; right:0; top:60px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:120px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:180px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:240px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:300px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:360px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:420px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:480px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:540px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:600px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:660px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:720px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:780px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:840px; border-top:1px dashed #ccc;"></div>
+        <svg style="position:absolute; left:18px; top:0; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:138px; top:0; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:15px; top:156px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:96px; top:156px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:177px; top:156px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:18px; top:288px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:138px; top:288px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:15px; top:444px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:96px; top:444px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:177px; top:444px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:18px; top:576px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:138px; top:576px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:15px; top:732px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:96px; top:732px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:177px; top:732px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+      </div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Panel 3</div>
+    </div>
+    <!-- Panel 4 -->
+    <div style="position: relative; padding: 45px 55px;">
+      <div style="position: relative; width: 258px; height: 876px; border: 3px solid #222; background: #fff;">
+        <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">43 cm</span></div>
+        <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">146 cm</span></div>
+        <div style="position:absolute; left:0; right:0; top:60px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:120px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:180px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:240px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:300px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:360px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:420px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:480px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:540px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:600px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:660px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:720px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:780px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:840px; border-top:1px dashed #ccc;"></div>
+        <svg style="position:absolute; left:18px; top:0; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:138px; top:0; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:15px; top:156px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:96px; top:156px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:177px; top:156px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:18px; top:288px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:138px; top:288px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:15px; top:444px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:96px; top:444px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:177px; top:444px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:18px; top:576px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:138px; top:576px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:15px; top:732px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:96px; top:732px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:177px; top:732px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+      </div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Panel 4</div>
+    </div>
+    <!-- Panel 5 -->
+    <div style="position: relative; padding: 45px 55px;">
+      <div style="position: relative; width: 258px; height: 876px; border: 3px solid #222; background: #fff;">
+        <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">43 cm</span></div>
+        <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">146 cm</span></div>
+        <div style="position:absolute; left:0; right:0; top:60px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:120px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:180px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:240px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:300px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:360px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:420px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:480px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:540px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:600px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:660px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:720px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:780px; border-top:1px dashed #ccc;"></div>
+        <div style="position:absolute; left:0; right:0; top:840px; border-top:1px dashed #ccc;"></div>
+        <svg style="position:absolute; left:18px; top:0; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:138px; top:0; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:15px; top:156px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:96px; top:156px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:177px; top:156px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:18px; top:288px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:138px; top:288px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:15px; top:444px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:96px; top:444px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:177px; top:444px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:18px; top:576px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:138px; top:576px; z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute; left:15px; top:732px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:96px; top:732px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute; left:177px; top:732px; z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+      </div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666;">Panel 5</div>
+    </div>
+  </div>
+
+  <div class="notes">
+    <strong>Notes:</strong> 5 identical back wall hook panels, each 43 × 146 cm. Hook lines every 10 cm. 6 rows per panel (5 cm gap between rows): 3 Medium rows (2 necks each) + 3 Small rows (3 necks each) = <strong>15 necks per panel</strong>. <br><strong>Total necks needed: 30 Medium (17 × 21 cm) + 45 Small (11 × 17 cm) = 75 necks across all 5 panels.</strong>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ========== HANGING PANEL 69cm ========== -->
+<div class="tray-section">
+  <h2>Hanging Panel — Neck with Hooks (69 cm) <span class="copies-badge">× 1</span></h2>
+
+  <!-- Neck Size Illustration -->
+  <div class="drawing-container" style="gap: 80px; margin-bottom: 10px;">
+    <div style="position: relative; text-align: center;">
+      <div style="font-weight: 700; font-size: 16px; margin-bottom: 12px; color: #333;">Medium Neck</div>
+      <div style="position: relative; display: inline-block; padding: 35px 45px;">
+        <svg width="255" height="315" viewBox="0 0 102 126">
+          <path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="0.8"/>
+          <line x1="51" y1="2" x2="51" y2="0" stroke="#baa89a" stroke-width="0.6"/>
+          <circle cx="51" cy="0" r="1.5" fill="none" stroke="#baa89a" stroke-width="0.6"/>
+        </svg>
+        <div class="dim-h" style="bottom: 0; left: 0; right: 0;"><span class="dim-line">17 cm</span></div>
+        <div class="dim-v" style="right: -35px; top: 0; bottom: 0;"><span class="dim-line">21 cm</span></div>
+      </div>
+    </div>
+    <div style="position: relative; text-align: center;">
+      <div style="font-weight: 700; font-size: 16px; margin-bottom: 12px; color: #333;">Small Neck</div>
+      <div style="position: relative; display: inline-block; padding: 35px 45px;">
+        <svg width="165" height="255" viewBox="0 0 66 102">
+          <path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="0.8"/>
+          <line x1="33" y1="1" x2="33" y2="0" stroke="#baa89a" stroke-width="0.6"/>
+          <circle cx="33" cy="0" r="1.2" fill="none" stroke="#baa89a" stroke-width="0.6"/>
+        </svg>
+        <div class="dim-h" style="bottom: 0; left: 0; right: 0;"><span class="dim-line">11 cm</span></div>
+        <div class="dim-v" style="right: -35px; top: 0; bottom: 0;"><span class="dim-line">17 cm</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="drawing-container">
+    <!-- Single Panel with dimensions -->
+    <div style="position: relative; padding: 45px 55px;">
+      <div style="position: relative; width: 414px; height: 876px; border: 3px solid #222; background: #fff;">
+        <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">69 cm</span></div>
+        <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">146 cm</span></div>
+        <!-- Hook lines every 10cm -->
+        <div style="position:absolute;top:60px;left:0;right:0;border-top:2px dashed #ccc;"></div>
+        <div style="position:absolute;top:120px;left:0;right:0;border-top:2px dashed #ccc;"></div>
+        <div style="position:absolute;top:180px;left:0;right:0;border-top:2px dashed #ccc;"></div>
+        <div style="position:absolute;top:240px;left:0;right:0;border-top:2px dashed #ccc;"></div>
+        <div style="position:absolute;top:300px;left:0;right:0;border-top:2px dashed #ccc;"></div>
+        <div style="position:absolute;top:360px;left:0;right:0;border-top:2px dashed #ccc;"></div>
+        <div style="position:absolute;top:420px;left:0;right:0;border-top:2px dashed #ccc;"></div>
+        <div style="position:absolute;top:480px;left:0;right:0;border-top:2px dashed #ccc;"></div>
+        <div style="position:absolute;top:540px;left:0;right:0;border-top:2px dashed #ccc;"></div>
+        <div style="position:absolute;top:600px;left:0;right:0;border-top:2px dashed #ccc;"></div>
+        <div style="position:absolute;top:660px;left:0;right:0;border-top:2px dashed #ccc;"></div>
+        <div style="position:absolute;top:720px;left:0;right:0;border-top:2px dashed #ccc;"></div>
+        <div style="position:absolute;top:780px;left:0;right:0;border-top:2px dashed #ccc;"></div>
+        <div style="position:absolute;top:840px;left:0;right:0;border-top:2px dashed #ccc;"></div>
+        <!-- Row 1: 3 Medium -->
+        <svg style="position:absolute;left:27px;top:0px;z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute;left:156px;top:0px;z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute;left:285px;top:0px;z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <!-- Row 2: 4 Small -->
+        <svg style="position:absolute;left:30px;top:156px;z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute;left:126px;top:156px;z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute;left:222px;top:156px;z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute;left:318px;top:156px;z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <!-- Row 3: 3 Medium -->
+        <svg style="position:absolute;left:27px;top:288px;z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute;left:156px;top:288px;z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute;left:285px;top:288px;z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <!-- Row 4: 4 Small -->
+        <svg style="position:absolute;left:30px;top:444px;z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute;left:126px;top:444px;z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute;left:222px;top:444px;z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute;left:318px;top:444px;z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <!-- Row 5: 3 Medium -->
+        <svg style="position:absolute;left:27px;top:576px;z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute;left:156px;top:576px;z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <svg style="position:absolute;left:285px;top:576px;z-index:2;" width="102" height="126" viewBox="0 0 102 126"><path d="M51,5 C45,5 42,8 42,15 L42,30 C42,38 35,42 25,50 C15,58 8,65 8,80 L8,116 C8,121 11,124 16,124 L86,124 C91,124 94,121 94,116 L94,80 C94,65 87,58 77,50 C67,42 60,38 60,30 L60,15 C60,8 57,5 51,5 Z" fill="#f5f0eb" stroke="#baa89a" stroke-width="1.2"/><text x="51" y="85" text-anchor="middle" font-size="10" fill="#999" font-family="sans-serif">M</text></svg>
+        <!-- Row 6: 4 Small -->
+        <svg style="position:absolute;left:30px;top:732px;z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute;left:126px;top:732px;z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute;left:222px;top:732px;z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute;left:318px;top:732px;z-index:2;" width="66" height="102" viewBox="0 0 66 102"><path d="M33,4 C28,4 26,7 26,12 L26,24 C26,30 21,34 15,40 C9,46 5,52 5,64 L5,93 C5,97 7,99 11,99 L55,99 C59,99 61,97 61,93 L61,64 C61,52 57,46 51,40 C45,34 40,30 40,24 L40,12 C40,7 38,4 33,4 Z" fill="#f0ece6" stroke="#baa89a" stroke-width="1.2"/><text x="33" y="68" text-anchor="middle" font-size="9" fill="#999" font-family="sans-serif">S</text></svg>
+      </div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666; font-weight:600;">9 Medium + 12 Small = 21 necks</div>
+    </div>
+  </div>
+
+  <div class="notes">
+    <strong>Notes:</strong> Single hanging panel, 69 × 146 cm. Hook lines every 10 cm. 6 rows (5 cm gap between rows): 3 Medium rows (3 necks each) + 3 Small rows (4 necks each) = <strong>21 necks total</strong>. <br><strong>Necks needed: 9 Medium (17 × 21 cm) + 12 Small (11 × 17 cm).</strong>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ========== DIAMOND PANEL ========== -->
+<div class="tray-section">
+  <h2>Hanging Panel — Diamond Display <span class="copies-badge">× 1</span></h2>
+
+  <!-- Diamond Size Illustration -->
+  <div class="drawing-container" style="gap: 80px; margin-bottom: 10px;">
+    <div style="position: relative; text-align: center;">
+      <div style="font-weight: 700; font-size: 16px; margin-bottom: 12px; color: #333;">Big Diamond</div>
+      <div style="position: relative; display: inline-block; padding: 35px 45px;">
+        <svg width="200" height="276" viewBox="0 0 174 240">
+          <polygon points="87,0 174,120 87,240 0,120" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/>
+          <text x="87" y="128" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">B</text>
+        </svg>
+        <div class="dim-h" style="bottom: 0; left: 0; right: 0;"><span class="dim-line">29 cm</span></div>
+        <div class="dim-v" style="right: -35px; top: 0; bottom: 0;"><span class="dim-line">40 cm</span></div>
+      </div>
+    </div>
+    <div style="position: relative; text-align: center;">
+      <div style="font-weight: 700; font-size: 16px; margin-bottom: 12px; color: #333;">Small Diamond</div>
+      <div style="position: relative; display: inline-block; padding: 35px 45px;">
+        <svg width="200" height="241" viewBox="0 0 174 210">
+          <polygon points="87,0 174,105 87,210 0,105" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/>
+          <text x="87" y="113" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">S</text>
+        </svg>
+        <div class="dim-h" style="bottom: 0; left: 0; right: 0;"><span class="dim-line">29 cm</span></div>
+        <div class="dim-v" style="right: -35px; top: 0; bottom: 0;"><span class="dim-line">35 cm</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="drawing-container">
+    <div style="position: relative; padding: 45px 55px;">
+      <div style="position: relative; width: 576px; height: 876px; border: 3px solid #222; background: #fff;">
+        <div class="dim-h" style="top: -30px; left: 0; right: 0;"><span class="dim-line">96 cm</span></div>
+        <div class="dim-v" style="left: -40px; top: 0; bottom: 0;"><span class="dim-line">146 cm</span></div>
+        <!-- Top row: 2 Small diamonds -->
+        <svg style="position:absolute;left:114px;top:108px;z-index:2;" width="174" height="210" viewBox="0 0 174 210"><polygon points="87,0 174,105 87,210 0,105" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/><text x="87" y="113" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute;left:288px;top:108px;z-index:2;" width="174" height="210" viewBox="0 0 174 210"><polygon points="87,0 174,105 87,210 0,105" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/><text x="87" y="113" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">S</text></svg>
+        <!-- Middle row: 3 Big diamonds -->
+        <svg style="position:absolute;left:27px;top:318px;z-index:2;" width="174" height="240" viewBox="0 0 174 240"><polygon points="87,0 174,120 87,240 0,120" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/><text x="87" y="128" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">B</text></svg>
+        <svg style="position:absolute;left:201px;top:318px;z-index:2;" width="174" height="240" viewBox="0 0 174 240"><polygon points="87,0 174,120 87,240 0,120" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/><text x="87" y="128" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">B</text></svg>
+        <svg style="position:absolute;left:375px;top:318px;z-index:2;" width="174" height="240" viewBox="0 0 174 240"><polygon points="87,0 174,120 87,240 0,120" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/><text x="87" y="128" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">B</text></svg>
+        <!-- Bottom row: 2 Small diamonds -->
+        <svg style="position:absolute;left:114px;top:558px;z-index:2;" width="174" height="210" viewBox="0 0 174 210"><polygon points="87,0 174,105 87,210 0,105" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/><text x="87" y="113" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">S</text></svg>
+        <svg style="position:absolute;left:288px;top:558px;z-index:2;" width="174" height="210" viewBox="0 0 174 210"><polygon points="87,0 174,105 87,210 0,105" fill="#f0f4fa" stroke="#5a7a9a" stroke-width="1.5"/><text x="87" y="113" text-anchor="middle" font-size="14" fill="#5a7a9a" font-family="sans-serif">S</text></svg>
+      </div>
+      <div style="text-align:center; margin-top:8px; font-size:12px; color:#666; font-weight:600;">3 Big + 4 Small = 7 diamonds</div>
+    </div>
+  </div>
+
+  <div class="notes">
+    <strong>Notes:</strong> Single diamond panel, 96 × 146 cm. Honeycomb arrangement: 2 Small diamonds (top), 3 Big diamonds (middle), 2 Small diamonds (bottom). Points touching between rows. <br><strong>Big diamond: 40 × 29 cm | Small diamond: 35 × 29 cm | Total: 7 diamonds (3 Big + 4 Small).</strong>
   </div>
 </div>
 
